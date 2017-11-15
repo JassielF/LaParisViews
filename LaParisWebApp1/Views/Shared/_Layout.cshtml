@@ -1,0 +1,103 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - My ASP.NET Application</title>
+    <link href="~/Content/Site.css" rel="stylesheet" type="text/css" />
+    <link href="~/Content/css/bootstrap.css" rel="stylesheet" />
+    <link href="~/Content/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="~/Content/main.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <script src="~/Content/navbar/navbarJs.js"></script>
+    <script src="~/Scripts/modernizr-2.6.2.js"></script>
+</head>
+<body>
+
+    <header>
+        <nav class="navbar navbar-expand-xl navbar-dark bg-dark" >
+                <div class="brandRight">
+                        <a class="navbar-brand" href="@Url.Action("Index","Home")">
+                        <img src="~/Content/images/transparentLogo.png" alt="Brand" width="223" height="65"/> 
+                        </a>
+                </div>
+            <div class="searchRight">
+                <form class="navbar-form navbar-right" role="search">
+                    <div class="inline form-group">
+                        <input type="text" class="form-control" placeholder="Buscar...">
+                    </div>
+                    <button type="submit" class="btn btn-outline-success">Buscar</button>
+                </form>
+            </div>
+            <div class="userLeft inline">
+                    <button type="submit" onclick="@Url.Action("InicioSesion","LogIn")" class="btn btn-outline-success">Iniciar sesión</button> 
+                    <button class="btn btn-outline-success" type="button" onclick="@Url.Action("RegistroUsuario","Registro")">¿Aún no tienes cuenta?</button>
+            </div>
+        </nav>
+</header>
+
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+        <div class="container">
+            <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="@Url.Action("Productos","Catalogo")">Catalogo</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="@Url.Action("Promociones","Promocion")">Promoción</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="@Url.Action("Servicio","Servicios")">Servicios</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="@Url.Action("Establecimientos","Sucursal")">Sucursales</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="@Url.Action("Biografia","Historia")">Información general</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+</nav>
+
+        <div class="body-content">
+            @RenderBody()
+            <hr />
+        </div>
+
+    <footer class="footer-bs">
+        <div class="row">
+            <div class="col-md-4 footer-nav animated fadeInUp">
+                <h4>Sucursales</h4>
+                <div class="col-md-6">
+                    <ul class="pages">
+                        <li><p>Ley El Vigia</p></li>
+                        <li><p>Guaymas Norte</p></li>
+                        <li><p>Centro</p></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-4 footer-social animated fadeInDown">
+                <h4>Contactanos</h4>
+                <ul>
+                    <li><p>Número celular - (044) 622-111-1111</p></li>
+                    <li><p>Correo eléctronico - Laparis@laparis.com</p></li>
+                </ul>
+            </div>
+            <div class="col-md-4 footer-ns animated fadeInRight">
+                <h4>Siguenos</h4>
+                <ul>
+                    <li><a href="#">Facebook</a></li>
+                    <li><a href="#">Twitter</a></li>
+                    <li><a href="#">Instagram</a></li>
+                    <li><a href="#">RSS</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+        <script src="~/Scripts/jquery-1.10.2.min.js"></script>
+        <script src="~/Scripts/bootstrap.min.js"></script>
+</body>
+</html>
