@@ -118,6 +118,7 @@
     <Content Include="Content\js\bootstrap.min.js" />
     <Content Include="Content\loginForm\loginForm.css" />
     <Content Include="Content\loginForm\LoginJs.js" />
+    <Content Include="Content\loginForm\registerForm.css" />
     <Content Include="Content\main.css" />
     <Content Include="Content\Site.css" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
@@ -154,6 +155,7 @@
     <Compile Include="Controllers\PromocionController.cs" />
     <Compile Include="Controllers\RegistroController.cs" />
     <Compile Include="Controllers\ServiciosController.cs" />
+    <Compile Include="Controllers\ShopCartController.cs" />
     <Compile Include="Controllers\SucursalController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -174,6 +176,7 @@
     <Content Include="Views\LogIn\InicioSesion.cshtml" />
     <Content Include="Views\Servicios\Servicio.cshtml" />
     <Content Include="Views\Registro\RegistroUsuario.cshtml" />
+    <Content Include="Views\ShopCart\Shop.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

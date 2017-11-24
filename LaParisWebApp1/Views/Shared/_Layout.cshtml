@@ -16,7 +16,7 @@
 <body>
 
     <header>
-        <nav class="navbar navbar-expand-xl navbar-dark bg-dark" >
+        <div class="navbar navbar-expand-xl navbar-dark bg-dark" >
                 <div class="brandRight">
                         <a class="navbar-brand" href="@Url.Action("Index","Home")">
                         <img src="~/Content/images/transparentLogo.png" alt="Brand" width="223" height="65"/> 
@@ -31,10 +31,10 @@
                 </form>
             </div>
             <div class="userLeft inline">
-                    <button type="submit" onclick="@Url.Action("InicioSesion","LogIn")" class="btn btn-outline-success">Iniciar sesión</button> 
-                    <button class="btn btn-outline-success" type="button" onclick="@Url.Action("RegistroUsuario","Registro")">¿Aún no tienes cuenta?</button>
+                    <a href="@Url.Action("InicioSesion","LogIn")" class="btn btn-outline-success">Iniciar sesión</a> 
+                    <a href="@Url.Action("RegistroUsuario","Registro")" class="btn btn-outline-success">¿Aún no tienes cuenta?</a>
             </div>
-        </nav>
+        </div>
 </header>
 
     <nav class="navbar navbar-expand-md navbar-dark bg-dark">
@@ -55,6 +55,9 @@
                     </li>
                     <li class="nav-item">
                         <a class="nav-link text-white" href="@Url.Action("Biografia","Historia")">Información general</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white fa fa-shopping-cart" aria-hidden="true"></a>
                     </li>
                 </ul>
             </div>

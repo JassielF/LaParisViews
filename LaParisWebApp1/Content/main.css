@@ -81,7 +81,7 @@ footer {
 }
 
 
-/*FOOOOTEEEER*/
+/*FOOTER*/
 
 .footer-bs {
     background-color: #343a40;
@@ -200,7 +200,7 @@ footer {
 .page {
     display: flex;
     flex-direction: row;
-    height: 100vh;
+    height: 100%;
 }
 
 .sidebar {
@@ -215,110 +215,76 @@ footer {
     height: 100%;
 }
 
-/*SLIDE*/
 
-html {
-    font-size: 62.5%;
+
+div.shop-tab-container {
+    z-index: 10;
+    background-color: #FCE9DB;
+    padding: 0 !important;
+    border-radius: 0px;
+    -moz-border-radius: 0px;
+    border: 1px solid #ddd;
+    margin-top: 0px;
+    margin-left: 0px;
+    -webkit-box-shadow: 0 6px 12px rgba(0,0,0,.175);
+    box-shadow: 0 6px 12px rgba(0,0,0,.175);
+    -moz-box-shadow: 0 6px 12px rgba(0,0,0,.175);
+    background-clip: padding-box;
+    opacity: 0.97;
+    filter: alpha(opacity=97);
 }
 
-.carousel-item > img {
-    /* fixes bootstrap 4 bug: bit.ly/bootstrap4-carousel */
-    width: 100%;
-    height: 100%;
+div.shop-tab-menu {
+    padding-right: 0;
+    padding-left: 0;
+    padding-bottom: 0;
 }
 
-.laptop {
-    /*   width: 36%; */
-}
-
-.product-caption-title,
-.product-caption-button {
-    text-transform: uppercase;
-}
-
-.product-caption-button {
-    color: white;
-    border: 1px solid white;
-    padding: 5px 15px;
-    cursor: pointer;
-    background-color: rgba(0,0,0,0.3);
-}
-
-h3 {
-    margin-top: 12px;
-    font-size: 1.2rem;
-}
-
-/**
-* Media Queries, including bootstrap4 breakpoints (<576px, >=576px, >=768px, >=992px, >=1200px)
-**/
-@media screen and (min-width: 320px) {
-    body::before {
-        content: "320px";
-        font-family: Arial, sans-serif;
-        color: green;
-        position: fixed;
-        top: 0;
-        left: 0;
-        font-weight: 700;
-        margin: 5px;
-        font-size: 1rem;
-        z-index: 9999;
+    div.shop-tab-menu div.list-group {
+        margin-bottom: 0;
     }
+
+        div.shop-tab-menu div.list-group > a {
+            margin-bottom: 0;
+        }
+
+            div.shop-tab-menu div.list-group > a .glyphicon,
+            div.shop-tab-menu div.list-group > a .fa {
+                color: #bee5eb;
+            }
+
+            div.shop-tab-menu div.list-group > a:first-child {
+                border-top-right-radius: 0;
+                -moz-border-top-right-radius: 0;
+            }
+
+            div.shop-tab-menu div.list-group > a:last-child {
+                border-bottom-right-radius: 0;
+                -moz-border-bottom-right-radius: 0;
+            }
+
+            div.shop-tab-menu div.list-group > a.active,
+            div.shop-tab-menu div.list-group > a.active .glyphicon,
+            div.shop-tab-menu div.list-group > a.active .fa {
+                background-color: #FCE9DB;
+                background-image: #5A55A3;
+                color: #5A55A3;
+            }
+
+div.shop-tab-content {
+    background-color: #FCE9DB;
+     border: 1px solid #eeeeee; 
+    padding-left: 5px;
+    padding-top: 15px;
+    padding-bottom: 10px;
+    vertical-align: text-middle;
 }
 
-@media screen and (min-width: 480px) {
-    body::before {
-        content: "480px";
-        color: goldenrod;
-    }
-}
-
-@media screen and (min-width: 576px) {
-    body::before {
-        content: "576px";
-        color: maroon;
-    }
-}
-
-@media screen and (min-width: 768px) {
-    body::before {
-        content: "768px";
-        color: orange;
-    }
-}
-
-@media screen and (min-width: 992px) {
-    body::before {
-        content: "992px";
-        color: black;
-    }
-}
-
-@media screen and (min-width: 1200px) {
-    body::before {
-        content: "1200px";
-        color: red;
-    }
-}
-
-@media screen and (min-width: 1400px) {
-    body::before {
-        content: "1400px";
-        color: blue;
-    }
-}
-
-@media screen and (min-width: 1600px) {
-    body::before {
-        content: "1600px";
-        color: green;
-    }
-}
-
-@media screen and (min-width: 1800px) {
-    body::before {
-        content: "1800px";
-        color: peru;
-    }
+.list-group-item {
+    position: relative;
+    display: block;
+    padding: 0.75rem 1.25rem;
+    margin-bottom: -1px;
+    background-color: #fff;
+    border: 1px solid rgba(0, 0, 0, 0.120);
 }
