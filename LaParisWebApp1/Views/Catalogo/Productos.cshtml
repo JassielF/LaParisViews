@@ -2,46 +2,19 @@
 @{
     ViewBag.Title = "Productos";
 }
-<link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
 
-<link href="~/Content/css/bootstrap.css" rel="stylesheet" />
-<link href="~/Content/css/bootstrap.min.css" rel="stylesheet" />
+
+<link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+<link href="~/Content/bootstrap.min.css" rel="stylesheet" />
 <link href="~/Content/Site.css" rel="stylesheet" />
 <link href="~/Content/main.css" rel="stylesheet" />
 
+<script src="~/Scripts/bootstrap.min.js"></script>
 
-<h2>Productos</h2>
+<h2 id="sucur" hidden>Productos</h2>
 
-@*<div class="container">
-<div class="col-lg-3 col-md-3 col-sm-3 col-xs-3 shop-tab-menu">
-    <div class="list-group">
-        <a href="#" class="list-group-item">
-            <h4><i class="fa fa-chevron-right" aria-hidden="true"></i> Laptop & PC's</h4>
-        </a>
-        <a href="#" class="list-group-item">
-            <h4><i class="fa fa-chevron-right" aria-hidden="true"></i> Cameras</h4>
-        </a>
-        <a href="#" class="list-group-item">
-            <h4><i class="fa fa-chevron-right" aria-hidden="true"></i> Mens Clothing</h4>
-        </a>
-        <a href="#" class="list-group-item">
-            <h4><i class="fa fa-chevron-right" aria-hidden="true"></i> Womens Clothing</h4>
-        </a>
-        <a href="#" class="list-group-item">
-            <h4><i class="fa fa-chevron-right" aria-hidden="true"></i> Watches</h4>
-        </a>
-        <a href="#" class="list-group-item">
-            <h4><i class="fa fa-chevron-right" aria-hidden="true"></i> Tablets</h4>
-        </a>
-        <a href="#" class="list-group-item">
-            <h4><i class="fa fa-chevron-right" aria-hidden="true"></i> All Categories</h4>
-        </a>
-    </div>
-</div>
-</div>*@
-
-<div class="row">
-    <div class="col-3 left-menu">
+<div class="container1">
+    <div class="coll-3 left-menu">
         <ul class="nav flex-column">
             <li class="nav-item">
                 <a class="nav-link active" href="#">Labiales</a>
@@ -52,6 +25,67 @@
             <li class="nav-item">
                 <a class="nav-link" href="#">Extensiones</a>
             </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Extensiones</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Extensiones</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Extensiones</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Extensiones</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Extensiones</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Extensiones</a>
+            </li>
         </ul>
     </div>
 </div>
+
+
+<div class="shop-items">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-3 col-sm-6">
+                <div class="item">
+                    <img class="img-responsive" src="https://lorempixel.com/200/200/food/1/" alt="">
+                         <div class="item-dtls">
+                        <h4><a href="#">Lorem product</a></h4>
+                        <span class="price lblue">$23.00</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-3 col-sm-6">         
+                <div class="item">                   
+                    <img class="img-responsive" src="https://lorempixel.com/200/200/food/5/" alt="">
+                    <div class="item-dtls">               
+                        <h4><a href="#">Product name</a></h4>
+                        <span class="price lblue">$31.00</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>                
+
+<nav aria-label="Page navigation example">
+    <ul class="pagination justify-content-center">
+        <li class="page-item disabled">
+            <a class="page-link" href="#" tabindex="-1">Anterior</a>
+        </li>
+        <li class="page-item"><a class="page-link" href="#">1</a></li>
+        <li class="page-item"><a class="page-link" href="#">2</a></li>
+        <li class="page-item"><a class="page-link" href="#">3</a></li>
+        <li class="page-item">
+            <a class="page-link" href="#">Siguiente</a>
+        </li>
+    </ul>
+</nav>
